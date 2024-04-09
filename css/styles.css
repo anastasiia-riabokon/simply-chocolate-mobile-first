@@ -1540,6 +1540,10 @@ section {
 /*==================MODAL-WINDOW======================== */
 
 /* #region  BACKDROP*/
+body:has(.modal-overlay.is-open) {
+  overflow: hidden;
+}
+
 .modal-overlay {
   background-color: rgba(46, 47, 66, 0.5);
   position: fixed;
